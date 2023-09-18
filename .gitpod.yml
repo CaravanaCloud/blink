@@ -5,6 +5,7 @@ image:
 tasks:
   - name: Welcome
     init: |
+      ./build.sh
       echo "Init executed at $(date)"
     command: echo "Hello executed at $(date)"
 
@@ -25,15 +26,15 @@ ports:
     onOpen: ignore
     visibility: public
 
-  - port: 8080
+  - port: 4242
     onOpen: ignore
     visibility: public
 
-  - port: 8081
-    onOpen: open-browser
+  - port: 4243
+    onOpen: ignore
     visibility: public
 
-  - port: 8888
+  - port: 4244
     onOpen: ignore
     visibility: public
 

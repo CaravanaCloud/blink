@@ -1,0 +1,1 @@
+mvn -f blink-vdn quarkus:dev
