@@ -1,5 +1,5 @@
 
-<h1 align=center>Blink: Connecting Lifesavers</h1>
+<h1 align=center>Blink: Linked by blood</h1>
 
 This project was created with the aim of connecting blood donors with blood recipients and also encouraging people to donate through social campaigns.
 
