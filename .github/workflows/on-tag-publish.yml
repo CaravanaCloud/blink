@@ -1,11 +1,12 @@
 name: Build Blink
 
 on:
-  push: {}
+  create: {}
   workflow_dispatch: {}
 
 jobs:
   build-blink:
+    if: github.event.ref_type == 'tag'
     runs-on: ubuntu-latest
     env:
       QUARKUS_PROFILE: prod
