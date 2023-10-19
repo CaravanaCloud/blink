@@ -1,4 +1,4 @@
-name: Deploy Blink on AWS
+name: Build Blink
 
 on:
   push: {}
@@ -8,7 +8,7 @@ jobs:
   deploy-blink-to-aws:
     runs-on: ubuntu-latest
     env:
-      AWS_REGION: us-east-1
+      QUARKUS_PROFILE: prod
 
     steps:
       
@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'temurin'
+          distribution: 'corretto'
           architecture: 'x64'
       
       - name: Checkout Blink
