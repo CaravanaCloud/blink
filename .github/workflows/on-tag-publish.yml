@@ -1,4 +1,4 @@
-name: Build Blink
+name: Publish Blink
 
 on:
   create: {}
