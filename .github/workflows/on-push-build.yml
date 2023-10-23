@@ -21,13 +21,14 @@ jobs:
       
       - name: Checkout Blink
         uses: actions/checkout@v4
-        with:
-          repository: caravanacloud/blink
 
       - name: Build packages with Maven
-        run: mvn --no-transfer-progress -B package
+        run: mvn --no-transfer-progress -B package | tee mvn.log
         continue-on-error: true        
 
-      - name: Debug
-        run: find .
+      - name: Upload maven log artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: mvn.log
+          path: mvn.log
 
