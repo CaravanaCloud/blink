@@ -30,13 +30,9 @@ jobs:
         run: mvn --no-transfer-progress -B -DskipTests package
         continue-on-error: true        
 
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # Use your personal token to get more rate limits
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
+          files: blink-core/target/blink-core.jar
+
 
