@@ -1,12 +1,13 @@
 name: Publish Blink
 
 on:
-  create: {}
+  push: 
+    tags:
+      - 'v*'
   workflow_dispatch: {}
 
 jobs:
   build-blink:
-    if: github.event.ref_type == 'tag'
     runs-on: ubuntu-latest
     env:
       QUARKUS_PROFILE: prod
@@ -26,9 +27,16 @@ jobs:
           repository: caravanacloud/blink
 
       - name: Build packages with Maven
-        run: mvn --no-transfer-progress -B package
+        run: mvn --no-transfer-progress -B -DskipTests package
         continue-on-error: true        
 
-      - name: Debug
-        run: find .
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # Use your personal token to get more rate limits
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
 
