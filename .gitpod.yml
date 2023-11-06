@@ -50,4 +50,4 @@ vscode:
     - ms-python.python
     - ms-toolsai.jupyter
     - esbenp.prettier-vscode
-
+    - dart-code.flutter
