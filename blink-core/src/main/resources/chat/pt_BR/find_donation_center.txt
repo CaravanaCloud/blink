@@ -1,0 +1,6 @@
+Onde é o hemocentro mais próximo?
+Onde eu poderia doar sangue por aqui?
+Cadê o hemocentro?
+Onde encontro um hemocentro na cidade de $city_name
+
+Estou buscando a localização mais próxima, aguarde.
