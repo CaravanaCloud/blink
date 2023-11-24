@@ -1,2 +1,3 @@
 # blink
-Linked by blood
+
+Incentivize blood and vital donations through local information and campaigns.
