@@ -52,6 +52,11 @@ yarn run dev
 
 Navigate to http://localhost:5473
 
+
+## Troubleshooting
+
+If you find issues, check [DEBUG.md](DEBUG.md)
+
 # Good first tasks
 
 Here's some ideas to get started:
