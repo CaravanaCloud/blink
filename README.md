@@ -1,6 +1,7 @@
 # Blink
 
-Incentivizing blood donations and similar campaigns.
+Incentivizing blood donations and similar campaigns. Using a simple UI, users can quickly find the nearest donation center and local donation campaigns. 
+
 
 # Tech Stack
 
