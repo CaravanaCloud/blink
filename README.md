@@ -48,6 +48,10 @@ yarn install
 yarn run dev
 ```
 
+## Accessing the Application
+
+Navigate to http://localhost:5473
+
 # Good first tasks
 
 Here's some ideas to get started:
