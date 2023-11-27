@@ -13,6 +13,6 @@
     <modules>
         <module>blink-core</module>
         <module>blink-api</module>
-        <module>blink-vdn</module>
+        <module>blink-cdk</module>
     </modules>
 </project>
