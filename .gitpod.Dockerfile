@@ -1,5 +1,5 @@
 # docker build --no-cache --progress=plain -f .gitpod.Dockerfile .
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 
 # System
 RUN bash -c "sudo apt-get update"
